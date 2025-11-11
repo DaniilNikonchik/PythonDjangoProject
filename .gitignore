@@ -1,0 +1,223 @@
+# ============================================
+# .gitignore для проекта Dom Khvoi
+# ============================================
+
+# ========== Python / Django ==========
+# Виртуальное окружение
+django_backend/venv/
+django_backend/env/
+django_backend/.venv/
+venv/
+env/
+.venv/
+
+# Python кэш
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Django
+django_backend/db.sqlite3
+django_backend/db.sqlite3-journal
+django_backend/*.log
+django_backend/staticfiles/
+django_backend/media/
+django_backend/.static_root/
+django_backend/.media_root/
+
+# Django миграции (раскомментируйте, если не хотите коммитить миграции)
+# django_backend/*/migrations/*.py
+# !django_backend/*/migrations/__init__.py
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ========== Node.js ==========
+# Зависимости
+backend/node_modules/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Логи
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Тесты
+backend/coverage/
+coverage/
+.nyc_output
+
+# ========== Переменные окружения ==========
+# .env файлы (ВАЖНО: не коммитить!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+django_backend/.env
+*.env
+
+# ========== IDE и редакторы ==========
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ========== Операционная система ==========
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ========== Временные файлы ==========
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+
+# ========== Скомпилированные файлы ==========
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.dylib
+
+# ========== Архивы ==========
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ========== Специфичные для проекта ==========
+# Копии frontend (если копируются автоматически)
+backend/public/*
+!backend/public/.gitkeep
+
+# Локальные настройки
+local_settings.py
+settings_local.py
+
+# Сертификаты и ключи (если есть)
+*.pem
+*.key
+*.crt
+*.cert
+
+# ========== Документация (опционально) ==========
+# Раскомментируйте, если не хотите коммитить документацию
+# docs/_build/
+# site/
+
+# ========== Другие ==========
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ========== Telegram бот ==========
+# Логи бота (если есть)
+bot.log
+telegram.log
+
+# ========== Базы данных ==========
+*.db
+*.sqlite
+*.sqlite3
+
+# ========== Кэш ==========
+.cache/
+*.cache
+
